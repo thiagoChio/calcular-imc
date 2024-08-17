@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+
+<link rel="stylesheet" href="assets/css/style.css">
+
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <title>calculadora de imc</title>
+</head>
+<body>
+ <main id="container">
+    <section id="img">
+        <img src="assets/images/illustration.svg" alt="">
+    </section>
+
+    <section id="calculator">
+      <form id="form">
+        <h1 id="title">
+         calculadora - IMC   
+        </h1>
+
+        <div class="input-box">
+          <label for="weight">
+            peso em kg
+          </label>
+          <div class="input-field">
+            <i class="fa-solid fa-weight-hanging"></i>
+            <input type="number" id="weight" required>
+            <span>
+               kg 
+            </span>
+          </div>  
+        </div>
+        <div class="input-box">
+            <label for="height">
+              altura em metros
+            </label>
+            <div class="input-field">
+                <i class="fa-solid fa-ruler"></i>
+              <input type="number" step="0.01" id="height" required>
+              <span>
+                 m
+              </span>
+            </div>  
+          </div>
+
+       <button id="calculate">
+        calcular
+       </button>   
+      </form>  
+
+<div id="infos" class="hidden">
+    <div id="result">
+     <div id="bmi">
+        <span id="value"></span>
+            <span>seu imc</span>
+     </div>  
+     <div id="description">
+       <span>55</span> 
+     </div> 
+    </div>
+    <div id="more_info">
+        <a href="https://youtu.be/VUPB65cTHCY?si=U6RX5aaqZrlCn04N">
+           Mais informações sobre o IMC
+           <i class="fa-solid fa-arrow-up-right-from-square"></i>  
+        </a>
+    </div>
+</div>
+    </section>
+ </main>
+ 
+ <script src="assets/js/script.js"></script>
+</body>
+</html>
